@@ -1,0 +1,23 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "create favicon",
+            "command": "./scripts/createFavicon.sh",
+            "args": [
+                "./resources/icons/site-favicon.svg",
+                "./src/assets",
+            ],
+            "problemMatcher": [],
+            "group": "test",
+            "icon": {
+                "dark": "./resources/dark/linter.svg",
+                "light": "./resources/light/linter.svg"
+            },
+            "detail": "Runs custom shell script agains the base favicon (svg) within resources to create the site favicon (.ico) file."
+        },
+    ]
+}
